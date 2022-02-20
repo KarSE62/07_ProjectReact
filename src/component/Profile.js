@@ -57,6 +57,7 @@ const Profile = ({
           <div className="border border-indigo-600 border-gray-300" />
           <div className="border border-indigo-600 border-gray-300" />
           <div className="border border-indigo-600 border-gray-300" />
+          <div></div>
         </div>
         <div className="grid grid-cols-11">
           <div></div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+// มีการรับ props ค่าต่างๆมา
 const Profile = ({
   profile_image,
   username,
@@ -10,6 +10,7 @@ const Profile = ({
   instagram,
 }) => {
   return (
+    // นำค่า props ไปจัดวางในทีๆต้องการ
     <div>
       <div className="grid grid-cols-4">
         <div></div>

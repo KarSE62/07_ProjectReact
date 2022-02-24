@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 function Search(props) {
+  // กำหนด state ของ search
   const [search, setSearch] = useState("");
-
+  // กำหนด Searchsubmit ทำการรับ event
   const Searchsubmit = (event) => {
+    // กำหนด props จากฟังชัน getPhotosSearch พารามิเตอร์ search
     props.getPhotosSearch(search);
   };
   return (
@@ -22,12 +24,14 @@ function Search(props) {
                 placeholder="Search"
                 className="input input-ghost"
                 onChange={(e) => setSearch(e.target.value)}
+                // กำหนด event ให้เซต state search
                 value={search}
+                // กำหนดระบุตำแหน่งของ search
               />
             </div>
           </div>
           <div className="flex-none">
-            <button className="btn btn-square btn-ghost" onClick={Searchsubmit}>
+            <button className="btn btn-square btn-ghost" onClick={Searchsubmit}> {/* กำหนด event ให้เรียกใช้ฟังชัน Searchsubmit */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

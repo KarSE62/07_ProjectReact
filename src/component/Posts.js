@@ -1,12 +1,15 @@
 import React from "react";
+// import Link จาก react-router-dom
 import { Link } from "react-router-dom";
-
+// มีการรับ props
 function Posts({ profile_image, username, img, likes, description }) {
   return (
+    // นำค่า props ไปจัดวางในทีๆต้องการ
     <div className="mb-8">
       <>
         <div className="card w-1/3 card-bordered card-compact lg:card-normal container mx-auto border-4 divide-y divide-slate-400">
           <div className="relative  ">
+            {/* กำหนด path เมื่อมีการคลิก tag ภายใน link และเซต path /Profile/ props ของ username */}
             <Link to={`/Profile/${username}`}>
               <div className="avatar m-3">
                 <div className="rounded-full w-10 h-10 ring  ring-offset-base-100 ring-offset-2 my-1.5">
